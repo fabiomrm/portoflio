@@ -1,12 +1,18 @@
 import { ItemContainer } from "./styles"
 
-export const ExperienceItem = () => {
+type Props = {
+    title: string;
+    description: string;
+    year: number;
+}
+
+export const ExperienceItem = ({ title, description, year }: Props) => {
     return(
         <ItemContainer>
             <div>
-                <h1>2022</h1>
-                <h2>Front-End</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nemo?</p>
+                <h1>{ year }</h1>
+                <h2>{title}</h2>
+                <p>{description}</p>
             </div>
             
         </ItemContainer>
