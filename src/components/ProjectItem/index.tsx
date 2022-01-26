@@ -1,20 +1,27 @@
 import { ProjectContainer } from "./styles"
 import { AiOutlineRightCircle } from "react-icons/ai";
 import { Link } from 'react-router-dom';
-import image from "../../assets/image.jpg";
 
-export const ProjectItem = () => {
+
+type Props = {
+    title: string;
+    type: string;
+    slug: string;
+    img: string;
+}
+
+export const ProjectItem = ({ title, type, slug, img}: Props) => {
     return(
-        <ProjectContainer imgUrl={image}>
+        <ProjectContainer imgUrl={img}>
             <section>
                 <div className="overlay" />
                 <div className="text">
-                    <h1>Projeto 01</h1>
-                    <h2>- Blog</h2>
+                    <h1>{title}</h1>
+                    <h2>- {type}</h2>
                 </div>
             </section>
             <button type="button">
-                <Link to="/projeto">
+                <Link to={`/projetos/${slug}`}>
                     <span>
                         Ver mais
                         <AiOutlineRightCircle />

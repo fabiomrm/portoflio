@@ -21,6 +21,10 @@ export const ProjectContainer = styled.div<ProjectProps>`
                 opacity: .4;
             }
         }
+
+        > button span {
+            color: ${({ theme }) => theme.colors.primary};
+        }
     }
 
     > section {
@@ -33,8 +37,9 @@ export const ProjectContainer = styled.div<ProjectProps>`
         > div.overlay {
             position: absolute;
             width: 100%;
+            height: 100%;
             background: ${({ theme }) => theme.colors.gradient};
-            opacity: .75;
+            opacity: .6;
 
             transition: 500ms;
         }
@@ -101,6 +106,81 @@ export const ProjectContainer = styled.div<ProjectProps>`
                 > div.text {
                     left: -10rem;
                 }
+            }
+        }
+    }
+
+    @media(max-width: 1450px) {
+        > section {
+            width: 40rem;
+        }
+    }
+
+    @media(max-width: 1000px) {
+        > section {
+            width: 100%;
+
+            > div.text {
+                left: 1rem;
+                top: 1rem;
+            }
+        }
+
+        > button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            margin: 0;
+        }
+
+        &:nth-child(2n) {
+            flex-direction: row;
+            > section {
+                width: 100%;
+
+                div.text {
+                    left:1rem;
+                    top:1rem;
+                    text-align: left;
+                }
+            }
+
+            > button {
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem;
+                margin: 0;
+            }
+
+            &:hover {
+                > section > div.text {
+                    left: 1rem;
+                }
+            }
+        }
+
+    }
+
+    @media(max-width: 700px) {
+        height: 17rem;
+    }
+
+    @media(max-width: 450px) {
+        > button {
+            height: auto;
+
+            span {
+                font-size: 1.5rem;
+                gap: .8rem;
+            }
+        }
+
+        > section > div.text {
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1rem;
             }
         }
     }
