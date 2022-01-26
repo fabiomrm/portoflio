@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
 
-        ::-webkit-scrollbar {
+        /* ::-webkit-scrollbar {
             width: 8px;
             height: 5px;
         }
@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         }
         ::-webkit-scrollbar-track {
             background: ${({ theme }) => theme.colors.primary};
-        }
+        } */
     }
 
     body {
