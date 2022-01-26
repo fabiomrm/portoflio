@@ -9,6 +9,9 @@ export const Projects = () => {
 
             <section>
                 <ProjectItem />
+                <ProjectItem />
+                <ProjectItem />
+                <ProjectItem />
             </section>
         </Container>
     )

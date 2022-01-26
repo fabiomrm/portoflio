@@ -11,6 +11,18 @@ export const ProjectContainer = styled.div<ProjectProps>`
     align-items: flex-end;
     position: relative;
 
+    &:hover {
+        > section {
+            > div.text {
+                right: -10rem;
+            }
+
+            > div.overlay {
+                opacity: .4;
+            }
+        }
+    }
+
     > section {
         width: 50rem;
         height: 100%;
@@ -22,7 +34,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
             position: absolute;
             width: 100%;
             background: ${({ theme }) => theme.colors.gradient};
-            oppacity: .75;
+            opacity: .75;
 
             transition: 500ms;
         }
@@ -69,5 +81,27 @@ export const ProjectContainer = styled.div<ProjectProps>`
         }
     }
 
-    
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+
+        > button {
+            margin: 3rem 5rem 0 0;
+        }
+
+        > section {
+            div.text {
+                text-align: right;
+                right: 0;
+                left: -8rem;
+            }
+        }
+
+        &:hover {
+            > section {
+                > div.text {
+                    left: -10rem;
+                }
+            }
+        }
+    }
 `;
