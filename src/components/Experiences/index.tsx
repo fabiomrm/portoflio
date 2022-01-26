@@ -10,9 +10,9 @@ export const Experiences = () => {
 
             <section>
                 <ExperienceItem year={2022} title="Fullstack" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
-                <ExperienceItem year={2022} title="Fullstack" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
-                <ExperienceItem year={2022} title="Fullstack" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
-                <ExperienceItem year={2022} title="Fullstack" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+                <ExperienceItem year={1973} title="Fullstack" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+                <ExperienceItem year={2045} title="Fullstack" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+                <ExperienceItem year={2011} title="Fullstack" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
             </section>
         </Container>
     )
