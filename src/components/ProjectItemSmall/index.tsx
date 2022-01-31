@@ -11,7 +11,7 @@ type Props = {
 
 export const ProjectItemSmall = ({title, type, imgUrl, slug}: Props) => {
     return(
-        <Container>
+        <Container imgUrl={imgUrl}>
             <Link to={`/projetos/${slug}`}>
                 <span>
                     <div className="overlay"/>

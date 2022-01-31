@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+type Props = {
+    imgUrl: string;
+}
+
+export const Container = styled.div<Props>`
     > a {
         position: relative;
         width: 100%;
-        background: #CCC;
+        background: url(${props => props.imgUrl});
         height: 10rem;
         padding: 1.5rem;
         display: flex;
